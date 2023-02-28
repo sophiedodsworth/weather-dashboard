@@ -141,7 +141,7 @@ $("#search-button").on("click", function (event) {
             }).then(function (geoCall) {
 
             if (geoCall.length == 0) {
-                alert("Please enter a valid location name")}
+                alert("Please enter the name of a city to continue.")}
             
 else {
                 var previousEntry = $("<button>");
@@ -173,7 +173,9 @@ $(document).ready(function () {
 
     for (i = 0; i < locationArray.length; i++) {
         var previousEntry = $("<button>")
+
         // added bootstrap to the class for styling the buttons 
+
         previousEntry.addClass("btn btn-sm btn-light btn-outline-info")
         previousEntry.attr({
             "type": "button",
